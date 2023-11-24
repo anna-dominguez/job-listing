@@ -38,7 +38,9 @@ const Job = ({ job, addSelection }) => {
         />
         <div className="flex flex-col gap-[9px]">
           <div className="flex items-center gap-8">
-            <p className="text-blue font-bold text-[13px]">{company}</p>
+            <p className="text-blue font-bold text-[13px] md:text-lg">
+              {company}
+            </p>
             <div className="flex gap-2">
               {job.new && (
                 <p className="bg-blue text-white px-2 pt-1 rounded-xl font-bold text-sm tracking-[-0.108px]">
@@ -52,10 +54,10 @@ const Job = ({ job, addSelection }) => {
               )}
             </div>
           </div>
-          <h2 className="font-bold text-[15px] text-darkBlue transition-all duration-500 hover:text-blue cursor-pointer">
+          <h2 className="font-bold text-[15px] md:text-[22px] text-darkBlue transition-all duration-500 hover:text-blue cursor-pointer">
             {position}
           </h2>
-          <div className="flex gap-5 text-darkGrey items-center font-medium">
+          <div className="flex gap-5 text-darkGrey items-center font-medium md:text-lg">
             <p>{postedAt}</p>
             <div className="w-1 h-1 rounded-full bg-grey"></div>
             <p>{contract}</p>
@@ -65,8 +67,8 @@ const Job = ({ job, addSelection }) => {
         </div>
       </div>
       <div
-        className="flex flex-wrap md:max-w-[50%] 
-      border-t-grey border-t md:border-t-0 mt-4 md:mt-0 pt-4 md:pt-0 gap-4 text-blue font-bold"
+        className="flex flex-wrap md:max-w-[70%] border-t-grey border-t md:border-t-0
+        mt-4 md:mt-0 pt-4 md:pt-0 gap-4 md:text-lg text-blue font-bold"
       >
         <p
           onClick={() => addSelection(role)}
