@@ -73,14 +73,14 @@ const Job = ({ job, addSelection }) => {
         <p
           onClick={() => addSelection(role)}
           className="px-2.5 py-1 rounded-[4px] bg-blue/10 cursor-pointer
-         transition-all duration-500 hover:bg-blue hover:text-white"
+         transition-all duration-500 hover:bg-blue hover:text-white tracking-[-0.123px]"
         >
           {role}
         </p>
         <p
           onClick={() => addSelection(level)}
           className="px-2.5 py-1 rounded-[4px] bg-blue/10 cursor-pointer
-        transition-all duration-500 hover:bg-blue hover:text-white"
+        transition-all duration-500 hover:bg-blue hover:text-white tracking-[-0.123px]"
         >
           {level}
         </p>
@@ -89,7 +89,7 @@ const Job = ({ job, addSelection }) => {
             key={language}
             onClick={() => addSelection(language)}
             className="px-2.5 py-1 rounded-[4px] bg-blue/10 cursor-pointer
-           transition-all duration-500 hover:bg-blue hover:text-white"
+           transition-all duration-500 hover:bg-blue hover:text-white tracking-[-0.123px]"
           >
             {language}
           </p>
@@ -99,7 +99,7 @@ const Job = ({ job, addSelection }) => {
             key={tool}
             onClick={() => addSelection(tool)}
             className="px-2.5 py-1 rounded-[4px] bg-blue/10 cursor-pointer
-             transition-all duration-500 hover:bg-blue hover:text-white"
+             transition-all duration-500 hover:bg-blue hover:text-white tracking-[-0.123px]"
           >
             {tool}
           </p>
